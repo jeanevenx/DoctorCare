@@ -5,7 +5,59 @@ onScroll();
 function onScroll(){
     changeNavbarColor();
     backToTop();
+    activedMenuAtcurrentSection(home);
+    activedMenuAtcurrentSection(services);
+    activedMenuAtcurrentSection(about);
+    activedMenuAtcurrentSection(contact);
 }
+
+
+function activedMenuAtcurrentSection(section) {
+
+    const targetLine = scrollY + innerHeight / 2;
+
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+
+    const sectionEndsAt = sectionTop + sectionHeight;
+    
+    const sectionTopReachedOrPassedTargetLine = targetLine >= sectionTop;
+
+
+    const sectionEndPassedTargetLine = sectionEndsAt <= targetLine;
+
+    const sectionBundaries = sectionTopReachedOrPassedTargetLine && !sectionEndPassedTargetLine;
+
+    const sectionId = section.getAttribute('id');
+    const menuElement = document.querySelector(`.menu a[href*='${sectionId}']`);
+
+    menuElement.classList.remove('active');
+    if(sectionBundaries) {
+        menuElement.classList.add('active');
+    }
+
+
+    // console.log('targetLine: ' + targetLine + ' sectionTop: ' + sectionTop + ' height: ' + sectionHeight);
+    // console.log('section top reached or passed the targetLine: ' + sectionTopReachedOrPassedTargetLine);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function backToTop(){
     let btnBackToTop = document.getElementById('btnBackToTop');
