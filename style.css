@@ -417,6 +417,8 @@ body.menu-expanded button path {
 #contact .content .button {
     margin-left: 0;
 }
+
+/*====== FOOTER ========================================*/
 footer {
     background-color: var(--primary-color);
     width: 100vw;
@@ -690,4 +692,22 @@ a.show {
     #about .wrapper h2 {
         width: 44.7rem;
     }
+
+     /*===== CONTACT ================================*/
+     #contact .wrapper {
+         grid-template-columns: 40% 57%;
+         grid-template-areas: 'A B';
+     }
+     #contact .content .button {
+         margin-block: 4rem 0;
+     }
+
+     #contact .wrapper h2 {
+        margin-block: 0 4rem;
+    }
+
+    #contact .col-a {
+        align-self: center;
+    }
+
 }
