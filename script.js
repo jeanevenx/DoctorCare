@@ -35,10 +35,6 @@ function activedMenuAtcurrentSection(section) {
     if(sectionBundaries) {
         menuElement.classList.add('active');
     }
-
-
-    // console.log('targetLine: ' + targetLine + ' sectionTop: ' + sectionTop + ' height: ' + sectionHeight);
-    // console.log('section top reached or passed the targetLine: ' + sectionTopReachedOrPassedTargetLine);
 }
 
 
