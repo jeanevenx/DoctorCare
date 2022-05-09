@@ -676,7 +676,7 @@ a.show {
 
     /*===== ABOUT ================================*/
     #about .wrapper {
-        grid-template-columns: 48rem 57.3rem;
+        grid-template-columns: 45.5% 54.4%;
         grid-template-areas: 'B A';
         gap: 6.7rem;
     }
@@ -710,4 +710,28 @@ a.show {
         align-self: center;
     }
 
+    /*===== FOOTER ================================*/
+    footer {
+        padding-block: 8rem;
+    }
+
+    footer .social-link_footer {
+        padding-bottom: 0;
+    }
+    footer .copy p{
+        margin-bottom: 0;
+    }
+    footer .wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'A B';
+    }
+
+    footer .col-a{
+        align-self: center;
+    }
+
+    footer .col-b{
+        align-self: center;
+        justify-self: flex-end;
+    }
 }
