@@ -490,6 +490,14 @@ a.show {
         font-size: 4rem;
         line-height: 5.208rem;
     }
+
+    .col-a {
+        grid-area: A;
+    }
+
+    .col-b {
+        grid-area: B;
+    }
     /* ========== NAVIGATION ================= */
                  /* RESET */
     nav#navigation .wrapper *{
@@ -617,12 +625,8 @@ a.show {
         font-size: 5.2rem;
     }
     #home .col-a {
-        grid-area: A;
         text-align: left;
         align-self: center;
-    }
-    #home .col-b {
-        grid-area: B;
     }
 
     #home img.img-header  {
@@ -669,4 +673,21 @@ a.show {
     }
 
     /*===== ABOUT ================================*/
+    #about .wrapper {
+        grid-template-columns: 48rem 57.3rem;
+        grid-template-areas: 'B A';
+        gap: 6.7rem;
+    }
+
+    #about .col-a {
+        align-self: center;
+    }
+
+    #about .content p {
+        margin-bottom: 0;
+    }
+
+    #about .wrapper h2 {
+        width: 44.7rem;
+    }
 }
