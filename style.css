@@ -290,7 +290,7 @@ body.menu-expanded button path {
     content: "";
     width: 100%;
     height: calc(78% + var(--nav-height));
-    background-color: var(--Primary-color-green-light);
+    background-color: var(--Primary-color-light);
     display: block;
 
     position: absolute;
