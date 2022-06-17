@@ -38,23 +38,6 @@ function activedMenuAtcurrentSection(section) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function backToTop(){
     let btnBackToTop = document.getElementById('btnBackToTop');
     if(scrollY >= 500){
