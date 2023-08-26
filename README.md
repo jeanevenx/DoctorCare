@@ -1,6 +1,6 @@
 # DoctorCare Landing Page
 
-Welcome to the README for the DoctorCare landing page. This landing page is designed to provide a simple and effective introduction to DoctorCare's medical services. The HTML code provided is the foundation of the landing page, showcasing key sections such as navigation, home, services, about, contact, and footer.
+Welcome to the DoctorCare landing page README.
 
 ## Table of Contents
 
