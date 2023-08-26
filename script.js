@@ -37,24 +37,6 @@ function activedMenuAtcurrentSection(section) {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function backToTop(){
     let btnBackToTop = document.getElementById('btnBackToTop');
     if(scrollY >= 500){
@@ -65,10 +47,11 @@ function backToTop(){
 }
 
 function changeNavbarColor(){
+    let navigationId = document.getElementById('navigation');
     if(scrollY > 0){
-        navigation.classList.add("scroll");
+        navigationId.classList.add("scroll");
     } else{
-        navigation.classList.remove("scroll");
+        navigationId.classList.remove("scroll");
     }
 }
 
